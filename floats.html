@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background: #95a1c9;
+        }
+        .wrapper {
+            max-width: 800px;
+            border: 1px solid #808080;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        /* .clear:after {
+            content: " ";
+            display: table;
+            clear: both;
+        } */
+        /* ---------------alternative clear fix-------------- */
+        .clear {
+            width: 0;
+            clear: both;
+        }
+        header {
+            border: 1px dashed #808080;
+            text-align: center;
+            background-color: #f0f8ff;
+            padding: 15px;
+            margin: 5px;
+        } 
+        .footer {
+            border: 1px dashed #008000;
+            text-align: center;
+            margin: 5px;
+            background: #94ac94;
+            clear: both;
+        }
+        .sidebar-left {
+            border: 1px dashed blue;
+            width: 150px;
+            margin: 5px;  
+            float: left;
+            padding: 5px;
+            margin-top: 0px;
+            background: #d5f7c5; 
+        }
+        .sidebar-right {
+            border: 1px dashed #0000ff;
+            width: 150px;
+            margin: 5px;  
+            float: right;
+            padding: 5px;
+            margin-top: 0px; 
+            background: #d5f7c5; 
+        }         
+        .main {
+            min-width: 250px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px dashed #0000ff;
+            background: #f7c5f7;
+            overflow: hidden; 
+        }   
+        /* -------------------------------------------- */
+        .wrapper-2 {
+            max-width: 800px;
+            /* min-height: 200px; */
+            border: 1px solid #808080;
+            margin: 0 auto;
+        }
+        .wrapper-2 [class^="block-"] {
+            background: #99acd4;
+            border: 1px dashed #474747;
+            float: left;
+            margin: 5px;
+        }
+        .block-4 {
+            clear: left;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>header</h1>
+        </header>
+        <div class="sidebar-left">
+            <h2>left sidebar heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat sit perferendis similique nobis quia, labore, pariatur eveniet error quasi ipsum, reiciendis consequuntur iusto earum incidunt quidem sint odio. Vero ea corrupti inventore? Excepturi aspernatur laborum saepe deleniti ratione asperiores porro natus voluptate accusamus, cum, nemo rem cumque nostrum veritatis.</p>
+        </div>
+        <div class="sidebar-right">
+                <h2>right sidebar heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat sit perferendis similique nobis quia, labore, pariatur eveniet error quasi ipsum, reiciendis consequuntur iusto earum incidunt quidem sint odio. Vero ea corrupti inventore? Excepturi aspernatur laborum saepe deleniti ratione asperiores porro natus voluptate accusamus, cum, nemo rem cumque nostrum veritatis.</p>
+            </div>
+        <div class="main">
+            <h2>main heading</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae tempore cumque magni soluta ullam autem, omnis nam nulla vitae repudiandae dignissimos, aut aspernatur ipsa molestiae excepturi, culpa tenetur aliquid nemo expedita. Natus vero dolorum rem numquam necessitatibus, voluptatibus, alias sapiente saepe in ut mollitia sunt maxime soluta dolores, modi rerum quae dolorem dicta neque. Quisquam dolorem laudantium fugit facere voluptates, repellat quis ad culpa saepe? Maiores magni repellat, quod odio laborum voluptas commodi quo sint eum atque asperiores molestiae officia alias incidunt dolore, iure unde pariatur exercitationem magnam obcaecati quae aspernatur similique at ullam. Cumque obcaecati perferendis quidem nihil laboriosam debitis ipsa repellat aspernatur velit, sequi nesciunt dolores esse aut, labore animi placeat porro saepe consequatur! Dicta, excepturi neque? Nesciunt deleniti dicta saepe magni quis accusantium rerum ipsa reprehenderit magnam qui, quae maxime doloremque nobis! Aspernatur, sunt? Vel distinctio sed ducimus, ea magnam expedita. Animi similique fugit omnis blanditiis expedita?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae tempore cumque magni soluta ullam autem, omnis nam nulla vitae repudiandae dignissimos, aut aspernatur ipsa molestiae excepturi, culpa tenetur aliquid nemo expedita. Natus vero dolorum rem numquam necessitatibus, voluptatibus, alias sapiente saepe in ut mollitia sunt maxime soluta dolores, modi rerum quae dolorem dicta neque. Quisquam expedita?</p>
+        </div>
+        <footer class="footer">
+            <h3>footer text</h3>
+        </footer>
+    </div>
+    <div class="wrapper-2">
+        <div class="block-1">block 1</div>
+        <div class="block-2">block 2</div>
+        <div class="block-3">block 3</div>
+        <div class="block-4">block 4</div>
+        <div class="block-5">block 5</div>
+        <div class="block-6">block 6</div>
+        <div class="clear"></div>
+    </div>
+
+</body>
+</html>
