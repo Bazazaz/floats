@@ -10,7 +10,7 @@
 
 }
 .form [type="password"], .form [type="mail"] {
-    width: 140px;
+    width: 90px;
     /* display: inline-block; */
     float: right;
     border-radius: 5px;
