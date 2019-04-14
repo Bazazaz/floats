@@ -27,6 +27,10 @@
             background: rgb(119, 197, 109);
             border: 1px dashed gray;
             padding: 10px;
+            margin: 5px;
+        }
+        .column_wrapper .sidebar{
+            width: 45%;
         }
         .right {
             float: right;
@@ -38,8 +42,14 @@
             background: rgb(133, 195, 199);
             border: 1px dashed gray;
             padding: 10px;
-            min-width: 250px;
+            width: 45%;
             overflow: hidden;
+            margin: 5px;
+        }
+        .column_wrapper {
+            width: 70%;
+            float: left;
+            background: rgb(207, 207, 207);
         }
         .footer {
             height: 100px;
@@ -59,10 +69,17 @@
         <header class="header">
             <h1 class="header-heading">header heading</h1>
         </header>
-        <aside class="sidebar left">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit id, sequi voluptatum nostrum aut dolorum reiciendis nemo quasi nesciunt.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae error voluptates ullam eligendi provident nulla. Quis enim deleniti quibusdam tempora deserunt ipsa eaque unde molestiae. Facilis voluptatem eveniet, in quam cum illum voluptatum labore velit vero amet quibusdam sapiente est quas aut laborum deleniti! Reprehenderit sequi quidem earum consequatur incidunt!</p>
-        </aside>
+        <section class="column_wrapper">
+            <aside class="sidebar left">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit id, sequi voluptatum nostrum aut dolorum reiciendis nemo quasi nesciunt.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae error voluptates ullam eligendi provident nulla. Quis enim deleniti quibusdam tempora deserunt ipsa eaque unde molestiae. Facilis voluptatem eveniet, in quam cum illum voluptatum labore velit vero amet quibusdam sapiente est quas aut laborum deleniti! Reprehenderit sequi quidem earum consequatur incidunt!</p>
+            </aside>
+            <div class="main right">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione et similique laudantium distinctio est ea qui excepturi totam, veritatis illum hic eos dicta fugit nemo? Non neque voluptas repudiandae iusto accusantium sed quaerat quidem sequi dicta animi cum, unde, itaque deleniti officia. Quia provident iusto perferendis beatae ipsa. Laudantium, alias.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo nobis, nisi beatae doloremque ea, optio, tenetur incidunt eligendi quos ipsam corporis aut quisquam molestiae odit quaerat sapiente corrupti voluptatibus id suscipit! Voluptas dignissimos beatae dolore odio iste recusandae dolorum eum. Ipsum accusamus fugit nulla maiores nesciunt explicabo at neque!</p>
+                <img src="http://placehold.it/200x150" alt="">
+            </div>
+        </section>
         <aside class="sidebar right">
                 <form class="form" action="">
                     <label class="email" for="email">Email<input name="email" type="mail"></label>
@@ -73,20 +90,14 @@
                 </form>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptas impedit repellat ipsam pariatur voluptatem autem aspernatur eaque laborum rerum architecto, repellendus ex incidunt culpa laboriosam sint et quisquam enim unde ratione! At assumenda temporibus incidunt ad enim veritatis alias voluptatem, rem officiis ut tempore possimus fuga blanditiis non libero!</p>
         </aside>
-        <div class="main">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione et similique laudantium distinctio est ea qui excepturi totam, veritatis illum hic eos dicta fugit nemo? Non neque voluptas repudiandae iusto accusantium sed quaerat quidem sequi dicta animi cum, unde, itaque deleniti officia. Quia provident iusto perferendis beatae ipsa. Laudantium, alias.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo nobis, nisi beatae doloremque ea, optio, tenetur incidunt eligendi quos ipsam corporis aut quisquam molestiae odit quaerat sapiente corrupti voluptatibus id suscipit! Voluptas dignissimos beatae dolore odio iste recusandae dolorum eum. Ipsum accusamus fugit nulla maiores nesciunt explicabo at neque!</p>
-            <img src="http://placehold.it/200x150" alt="">
-            
-        </div>
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="footer-contacts">
                 <p>phone number: +7 321 456 21 12</p>   
             </div>
             <div class="footer-location">
                 <p>russia, tomsk</p>    
             </div>
-        </footer>
+        </footer> -->
     </div>
 </body>
 </html>
