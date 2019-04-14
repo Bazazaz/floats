@@ -16,6 +16,9 @@
            margin: 0 auto;
             
         }
+        .clear {
+            clear: both;
+        }
         .header {
             height: 100px;
             background: rgb(197, 112, 112);
@@ -28,9 +31,6 @@
             border: 1px dashed gray;
             padding: 10px;
             margin: 5px;
-        }
-        .column_wrapper .sidebar{
-            width: 45%;
         }
         .right {
             float: right;
@@ -55,9 +55,12 @@
         }
         .column_wrapper {
             width: 45%;
-            background: rgb(207, 207, 207);
+            background: rgb(247, 212, 212);
             padding: 10px;
             margin-top: 5px;
+        }
+        .column_wrapper .sidebar{
+            width: 45%;
         }
         .footer {
             height: 100px;
@@ -68,6 +71,11 @@
         .footer-contacts, .footer-location {
             display: inline-block;
             margin-left: 50px;
+        }
+        .media {
+            border: 1px solid gray;
+            /* height: 100px; */
+            padding: 10px;
         }
     </style>
     <title>float layout</title>
@@ -110,7 +118,12 @@
             <div class="tip right">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi suscipit maiores corrupti eveniet error quibusdam sequi ea quos exercitationem.</p>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, vitae. At accusantium repellendus numquam voluptates minus architecto? Modi minus voluptatum labore voluptatibus at, iure, voluptates cum autem assumenda quod provident consectetur sed est quisquam pariatur itaque illum! Voluptates, aperiam vitae illum non autem, iste cupiditate voluptatibus dignissimos impedit dolore laboriosam.</p>
+            <div class="clear"></div>
+            <div class="media">
+                <img src="http://placehold.it/50x50" alt="" class="media-img left">
+                <div class="clear"></div>
+            </div>
+            
         </section>
         <!-- <footer class="footer">
             <div class="footer-contacts">
