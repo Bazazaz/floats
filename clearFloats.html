@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body, html {
+            height: 100%;
+        }
+        .wrapper {
+            background: rgb(218, 205, 205);
+            border: 1px dashed gray;
+            padding: 5px;
+        }
+        .media-block {
+            /* height: 100px; */
+            border: 1px solid black;
+            margin-bottom: 10px;
+            padding: 10px;
+            background: rgb(185, 219, 247);
+        }
+        .media-block img {
+            margin-right: 15px;
+            border: 1px solid black;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .cleared-by-div {
+            clear: both;
+        }
+        .clear-by-pClass:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        .clear-by-overflow {
+            overflow: hidden;
+
+        }
+        .absolute-positioned {
+            width: 30px;
+            height: 30px;
+            background: red;
+            position: absolute;
+            right: 20px;
+            top: 80%;
+            border-radius: 50%;
+            color: white;
+            font-family: arial;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+            border: 2px dashed gray;
+            background-clip: content-box; 
+        }
+        .with-positioned-el {
+            position: relative;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>header</h1>
+        </header>
+        <div class="media-block">
+            <img class="left" src="http://placehold.it/80x80" alt="">cleared with empty block element<div class="cleared-by-div"></div>
+        </div>
+        <div class="media-block clear-by-pClass"><img class="left" src="http://placehold.it/80x80" alt="">cleared by pseudo-class</div>
+        <div class="media-block"><img class="left" src="http://placehold.it/80x80" alt="">not cleared</div>
+        <div class="media-block clear-by-overflow"><img class="left" src="http://placehold.it/80x80" alt="">cleared by overflow hidden</div>
+        <div class="media-block clear-by-overflow with-positioned-el"><img class="left" src="http://placehold.it/80x80" alt="">cleared by overflow hidden. Have an absolute positioned el in container. It disappears when moved out of container <div class="absolute-positioned">A</div> </div>
+    </div>
+</body>
+</html>
