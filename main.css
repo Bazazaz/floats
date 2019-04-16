@@ -100,6 +100,10 @@ body, html {
     padding: 10px 20px 10px 20px;
     overflow: hidden;
 }
+
+
+
+
 /* ---------------equal height columns page styles---------------- */
 .equal-height-columns .column-wrapper {
     background: rgb(29, 204, 235);
@@ -124,3 +128,54 @@ body, html {
 .equal-height-columns p:last-child {
     margin-bottom: 0;
 }
+
+
+/* ---------------clear floats page styles---------------- */
+.clearing-floats .media-block {
+    /* height: 100px; */
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgb(185, 219, 247);
+}
+
+.clearing-floats .media-block img {
+    margin-right: 15px;
+    border: 1px solid rgb(95, 95, 95);
+}
+
+.clearing-floats .absolute-positioned {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    right: 20px;
+    top: 80%;
+    border-radius: 50%;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    border: 2px dashed gray;
+    background-clip: content-box; 
+}
+
+.clearing-floats .with-positioned-el {
+    position: relative;
+}
+
+.clearing-floats .clear-by-overflow {
+    overflow: hidden;
+}
+
+.clearing-floats .clear-by-pClass:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.clearing-floats .cleared-by-div {
+    clear: both;
+}
+
