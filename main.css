@@ -15,9 +15,21 @@ body, html {
     width: 900px;
     margin: 0 auto;
     border: 1px dashed gray;
+    background: #eeeeee;
 }
 .push, .footer { /* ----sticky footer CSS rule ---- */
    height: 100px; 
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear:after {
+    content: " ";
+    display: table;
+    clear: both;
 }
 .header {
     min-height: 135px;
@@ -33,22 +45,21 @@ body, html {
     list-style: none;
     padding: 0px;
 }
-.header .nav li {
+.header .nav a {
+    display: block;
     background: #A432FE;
     width: 200px;
     height: 25px;
     margin-bottom: 5px;
     padding-left: 10px;
     line-height: 25px;
+    color: white;
+    text-decoration: none;
 }
 .header .nav li:last-child {
     margin-bottom: 0;
 }
-.header .nav a {
-    color: white;
-    text-decoration: none;
 
-}
 .header .heading {
     position: absolute;
     top: 24px;
@@ -58,6 +69,15 @@ body, html {
     margin-left: 27px;
     color: white;
 }
+/* ------------- active button highlite ------------------- */
+.floats-main .button [href="floats.html"],
+.equal-height-columns .button [href="equal-height-columns.html"],
+.clearing-floats .button [href="clearFloats.html"],
+.floats-within-floats .button [href="floats-within-floats.html"] {
+    background: #e139f7;
+}
+/* ------------- active button highlite ------------------- */
+
 .footer {
     margin: 0 auto;
     width: 900px;
@@ -68,21 +88,39 @@ body, html {
     margin-top: -100px;
 }
 /* ---------------main page styles---------------- */
-.left {
+/* .floats-main .left {
     float: left;
 }
-.right {
+.floats-main .right {
     float: right;
-}
-.sidebar {
+} */
+.floats-main .sidebar {
     background: rgb(56, 191, 253);
     width: 250px;
     padding: 10px 20px 10px 20px;
     color: white;
 }
-.main {
+.floats-main .main {
     background: rgb(232, 72, 253);
     color: white;
     padding: 10px 20px 10px 20px;
     overflow: hidden;
+}
+/* ---------------equal height columns page styles---------------- */
+.equal-height-columns .column-wrapper {
+    background: rgb(29, 204, 235);
+}
+.equal-height-columns .main,
+.equal-height-columns .sidebar {
+    padding: 20px;
+    color: white;
+}
+.equal-height-columns .main {
+    width: 648px;
+    background: rgb(235, 118, 118);
+}
+.equal-height-columns .sidebar {
+    width: 250px;
+    background: #1dcceb;
+    border: 1px dashed gray;
 }
