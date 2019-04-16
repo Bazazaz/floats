@@ -69,14 +69,14 @@ body, html {
     margin-left: 27px;
     color: white;
 }
-/* ------------- active button highlite ------------------- */
+/* ------------- active button highlight ------------------- */
 .floats-main .button [href="floats.html"],
 .equal-height-columns .button [href="equal-height-columns.html"],
 .clearing-floats .button [href="clearFloats.html"],
 .floats-within-floats .button [href="floats-within-floats.html"] {
     background: #e139f7;
 }
-/* ------------- active button highlite ------------------- */
+/* ------------- active button highlight ------------------- */
 
 .footer {
     margin: 0 auto;
@@ -88,12 +88,6 @@ body, html {
     margin-top: -100px;
 }
 /* ---------------main page styles---------------- */
-/* .floats-main .left {
-    float: left;
-}
-.floats-main .right {
-    float: right;
-} */
 .floats-main .sidebar {
     background: rgb(56, 191, 253);
     width: 250px;
@@ -123,4 +117,10 @@ body, html {
     width: 250px;
     background: #1dcceb;
     border: 1px dashed gray;
+}
+.equal-height-columns p {
+    margin-bottom: 15px;
+}
+.equal-height-columns p:last-child {
+    margin-bottom: 0;
 }
