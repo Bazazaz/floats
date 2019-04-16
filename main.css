@@ -16,8 +16,7 @@ body, html {
     margin: 0 auto;
     border: 1px dashed gray;
 }
-/* ----------sticky footer CSS rule ------------ */
-.push, .footer {
+.push, .footer { /* ----sticky footer CSS rule ---- */
    height: 100px; 
 }
 .header {
@@ -60,6 +59,8 @@ body, html {
     color: white;
 }
 .footer {
+    margin: 0 auto;
+    width: 900px;
     background: rgb(255, 54, 121);
     color: white;
     clear: both;
