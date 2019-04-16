@@ -5,87 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
-    <style>
-        @import "form.css";
-        html, body {
-            margin: 0;
-            height: 100%;
-        }
-        .wrapper {
-           max-width: 860px;
-           min-height: 100%;
-           margin: 0 auto;
-            
-        }
-        .clear {
-            clear: both;
-        }
-        .header {
-            height: 100px;
-            background: rgb(197, 112, 112);
-            border: 1px dashed gray;
-            padding: 10px;
-        }
-        .sidebar {
-            width: 22%;
-            background: rgb(119, 197, 109);
-            border: 1px dashed gray;
-            padding: 10px;
-            margin: 5px;
-        }
-        .right {
-            float: right;
-        }
-        .left {
-            float: left;
-        }
-        .main {
-            background: rgb(133, 195, 199);
-            border: 1px dashed gray;
-            padding: 10px;
-            width: 45%;
-            overflow: hidden;
-            margin: 5px;
-        }
-        .tip {
-            width: 40%;
-            background: rgb(187, 233, 178);
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-        .column_wrapper {
-            width: 45%;
-            background: rgb(247, 212, 212);
-            padding: 10px;
-            margin-top: 5px;
-        }
-        .column_wrapper .sidebar{
-            width: 45%;
-        }
-        .footer {
-            height: 100px;
-            background: rgb(236, 236, 70);
-            clear: both;
-            padding: 10px;
-        }
-        .footer-contacts, .footer-location {
-            display: inline-block;
-            margin-left: 50px;
-        }
-        .media {
-            border: 1px solid gray;
-            /* height: 100px; */
-            padding: 10px;
-        }
-    </style>
-    <title>float layout</title>
+    <title>float exercises</title>
 </head>
 <body class="floats-within-floats">
     <div class="wrapper">
-        <header>
-            <h1>header</h1>
-            <menu>
+        <header class="header">
+            <menu class="nav">
                 <ul>
                     <li class="button"><a href="floats.html">main (basic 3 cols)</a></li>
                     <li class="button"><a href="equal-height-columns.html">Equal height columns</a></li>
@@ -93,18 +18,9 @@
                     <li class="button"><a href="floats-within-floats.html">floats within floats</a></li>
                 </ul>
             </menu>
+            <h1 class="heading">Floats exercises</h1>
         </header>
-        <!-- <section class="column_wrapper">
-            <aside class="sidebar left">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit id, sequi voluptatum nostrum aut dolorum reiciendis nemo quasi nesciunt.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae error voluptates ullam eligendi provident nulla. Quis enim deleniti quibusdam tempora deserunt ipsa eaque unde molestiae. Facilis voluptatem eveniet, in quam cum illum voluptatum labore velit vero amet quibusdam sapiente est quas aut laborum deleniti! Reprehenderit sequi quidem earum consequatur incidunt!</p>
-            </aside>
-            <div class="main right">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione et similique laudantium distinctio est ea qui excepturi totam, veritatis illum hic eos dicta fugit nemo? Non neque voluptas repudiandae iusto accusantium sed quaerat quidem sequi dicta animi cum, unde, itaque deleniti officia. Quia provident iusto perferendis beatae ipsa. Laudantium, alias.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illo nobis, nisi beatae doloremque ea, optio, tenetur incidunt eligendi quos ipsam corporis aut quisquam molestiae odit quaerat sapiente corrupti voluptatibus id suscipit! Voluptas dignissimos beatae dolore odio iste recusandae dolorum eum. Ipsum accusamus fugit nulla maiores nesciunt explicabo at neque!</p>
-                <img src="http://placehold.it/200x150" alt="">
-            </div>
-        </section> -->
+        <!-- -------------------main content----------------- -->
         <aside class="sidebar left">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit id, sequi voluptatum nostrum aut dolorum reiciendis nemo quasi nesciunt.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae error voluptates ullam eligendi provident nulla. Quis enim deleniti quibusdam tempora deserunt ipsa eaque unde molestiae. Facilis voluptatem eveniet, in quam cum illum voluptatum labore velit vero amet quibusdam sapiente est quas aut laborum deleniti! Reprehenderit sequi quidem earum consequatur incidunt!</p>
@@ -115,33 +31,26 @@
                 <br>
                 <label class="password" for="password">Password<input name="password" type="password" placeholder=" enter the password"></label>
                 <br>
-                <input type="submit">
+                <input type="submit" value="submit">
             </form>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptas impedit repellat ipsam pariatur voluptatem autem aspernatur eaque laborum rerum architecto, repellendus ex incidunt culpa laboriosam sint et quisquam enim unde ratione! At assumenda temporibus incidunt ad enim veritatis alias voluptatem, rem officiis ut tempore possimus fuga blanditiis non libero!</p>
         </aside>
         <section class="column_wrapper right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat error similique illum excepturi dolorem officia ex harum, dicta eos culpa suscipit adipisci! Rerum nulla a nihil eligendi aut temporibus cupiditate accusantium. Sequi, doloribus quasi. A dolorem consequuntur impedit, esse facere culpa ipsa est laudantium delectus modi fugit quo? Consequuntur, ullam.</p>
+            <p>FLOATED TO THE RIGHT <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat error similique illum excepturi dolorem officia ex harum, dicta eos culpa suscipit adipisci! Rerum nulla a nihil eligendi aut temporibus cupiditate accusantium. Sequi, doloribus quasi. A dolorem consequuntur impedit, esse facere culpa ipsa est laudantium delectus modi fugit quo? Consequuntur, ullam.</p>
             <div class="tip left">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi suscipit maiores corrupti eveniet error quibusdam sequi ea quos exercitationem.</p>
+                <p> FLOATED TO THE LEFT <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi suscipit maiores corrupti eveniet error quibusdam sequi ea quos exercitationem.</p>
             </div>
             <div class="tip right">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi suscipit maiores corrupti eveniet error quibusdam sequi ea quos exercitationem.</p>
+                <p>FLOATED TO THE RIGHT <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi suscipit maiores corrupti eveniet error quibusdam sequi ea quos exercitationem.</p>
             </div>
             <div class="clear"></div>
-            <div class="media">
-                <img src="http://placehold.it/50x50" alt="" class="media-img left">
-                <div class="clear"></div>
-            </div>
-            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere dolore ad ducimus unde, dignissimos eaque impedit autem vero deleniti inventore molestias architecto placeat amet nobis provident, quidem, hic aut sapiente ea exercitationem libero ipsum commodi. Neque quae at, aliquid sit totam porro accusantium corporis, ea doloremque minima voluptatum perspiciatis!</p>
         </section>
-        <!-- <footer class="footer">
-            <div class="footer-contacts">
-                <p>phone number: +7 321 456 21 12</p>   
-            </div>
-            <div class="footer-location">
-                <p>russia, tomsk</p>    
-            </div>
-        </footer> -->
+        <!-- -------------------end of main content----------------- -->
+        <div class="push"></div>
     </div>
+    <footer class="footer">
+        <h3>footer text</h3>
+    </footer>
 </body>
 </html>

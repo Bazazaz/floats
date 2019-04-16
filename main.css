@@ -1,5 +1,7 @@
+
 /* ---fonts---- */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 
 /* ------------------------main layout------------------------- */
 * {
@@ -69,6 +71,18 @@ body, html {
     margin-left: 27px;
     color: white;
 }
+.sidebar {
+    background: rgb(56, 191, 253);
+    width: 250px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+p {
+    margin-bottom: 15px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
 /* ------------- active button highlight ------------------- */
 .floats-main .button [href="floats.html"],
 .equal-height-columns .button [href="equal-height-columns.html"],
@@ -88,12 +102,6 @@ body, html {
     margin-top: -100px;
 }
 /* ---------------main page styles---------------- */
-.floats-main .sidebar {
-    background: rgb(56, 191, 253);
-    width: 250px;
-    padding: 10px 20px 10px 20px;
-    color: white;
-}
 .floats-main .main {
     background: rgb(232, 72, 253);
     color: white;
@@ -122,19 +130,11 @@ body, html {
     background: #1dcceb;
     border: 1px dashed gray;
 }
-.equal-height-columns p {
-    margin-bottom: 15px;
-}
-.equal-height-columns p:last-child {
-    margin-bottom: 0;
-}
-
 
 /* ---------------clear floats page styles---------------- */
 .clearing-floats .media-block {
-    /* height: 100px; */
     border: 1px solid black;
-    margin-bottom: 10px;
+    margin: 10px 10px;
     padding: 10px;
     background: rgb(185, 219, 247);
 }
@@ -179,3 +179,54 @@ body, html {
     clear: both;
 }
 
+/* ---------------floats within floats page styles---------------- */
+.form {
+    background: #d1f729;
+    border: 1px dashed gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.form .password, .form .email  {
+    display: block;
+    color: rgb(107, 107, 107);
+
+}
+.form [type="password"], .form [type="mail"] {
+    width: 90px;
+    /* display: inline-block; */
+    float: right;
+    border-radius: 5px;
+    background: rgb(236, 213, 217);
+    padding-left: 5px; 
+
+}
+.form [type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+
+.floats-within-floats .column_wrapper {
+    overflow: hidden;
+    background: #f85656;
+    width: 398px;
+    padding: 15px;
+    color: white;
+}
+
+.floats-within-floats .tip {
+    width: 180px;
+    background: rgb(187, 233, 178);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: black;
+}
+.floats-within-floats .tip.right{
+    text-align: right;
+}
+
+.floats-within-floats .media {
+    border: 1px solid gray;
+    padding: 10px;
+} 
