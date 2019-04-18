@@ -132,6 +132,17 @@ p:last-child {
     border: 1px dashed gray;
 }
 
+.gradient-column-wrapper {
+    background-image: linear-gradient(90deg, #75fd5a 250px, #f756f7 250px, #2eb9fa 648px, #75fd5a 648px);
+}
+.gradient-column-wrapper .main {
+    width: 398px;
+    background: none;
+}
+.gradient-column-wrapper .sidebar {
+    background: none;
+}
+
 /* ---------------clear floats page styles---------------- */
 .clearing-floats .media-block {
     border: 1px solid black;
