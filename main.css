@@ -48,13 +48,14 @@ body, html {
     padding: 0px;
 }
 .header .nav a {
+    border-radius: 5px;
     display: block;
     background: #A432FE;
     width: 200px;
-    height: 25px;
+    height: 35px;
     margin-bottom: 5px;
     padding-left: 10px;
-    line-height: 25px;
+    line-height: 35px;
     color: white;
     text-decoration: none;
 }
