@@ -61,66 +61,15 @@ body, html {
 }
 
 .header .page-description {
-    position: relative;
     width: 76%;
     color: white;
-    line-height: 100px;
 }
-.header .page-description-text {
-    margin-left: 30px;
-    display: inline-block;
-}
-/* ---------------------heading bouncing letters ------------------- */
 .header .page-description .page-description-heading {
-    position: absolute;
-    bottom: 5px;
-    cursor: default;
-    margin-left: 15px;
-    /* display: inline-block; */
-    /* width: 200px; */
-}
-.header .page-description-heading span {
-    position: relative;
-    top: 20px;
-    display: inline-block;
-    -webkit-animation: bounce 0.5s ease 2 alternate;
-    font-size: 60px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
-    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
-}
-.header .page-description-heading span:nth-child(2) {
-    -webkit-animation-delay: 0.1s;
-}
-.header .page-description-heading span:nth-child(3) {
-    -webkit-animation-delay: 0.2s;
-}
-.header .page-description-heading span:nth-child(4) {
-    -webkit-animation-delay: 0.3s;
-}
-.header .page-description-heading span:nth-child(5) {
-    -webkit-animation-delay: 0.4s;
-}
-.header .page-description-heading span:nth-child(6) {
-    -webkit-animation-delay: 0.5s;
-}
-.header .page-description-heading span:nth-child(7) {
-    -webkit-animation-delay: 0.6s;
-}
-/* ANIMATION */
-@-webkit-keyframes bounce {
-    100% {
-      top: -5px;
-      text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-        0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
-        0 50px 25px rgba(0, 0, 0, 0.2);
-    }
-  }
-  /* ---------------------heading bouncing letters END------------------- */
+    font-size: 42px;
+    font-weight: normal;
+    margin-top: -9px;
 
-
+} 
 .sidebar {
     background: rgb(56, 191, 253);
     width: 250px;
