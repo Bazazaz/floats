@@ -1,8 +1,6 @@
 
 /* ---fonts---- */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
-
 /* ------------------------main layout------------------------- */
 * {
     box-sizing: border-box;
@@ -62,15 +60,16 @@ body, html {
     margin-bottom: 0;
 }
 
-.header .heading {
-    position: absolute;
-    top: 24px;
-    left: 214px;
-    font-size: 72px;
-    font-weight: normal;
-    margin-left: 27px;
+.header .page-description {
+    width: 76%;
     color: white;
 }
+.header .page-description .page-description-heading {
+    font-size: 42px;
+    font-weight: normal;
+    margin-top: -9px;
+
+} 
 .sidebar {
     background: rgb(56, 191, 253);
     width: 250px;
@@ -109,22 +108,22 @@ p:last-child {
     overflow: hidden;
 }
 
-
-
-
 /* ---------------equal height columns page styles---------------- */
 .equal-height-columns .column-wrapper {
     background: rgb(29, 204, 235);
 }
+
 .equal-height-columns .main,
 .equal-height-columns .sidebar {
     padding: 20px;
     color: white;
 }
+
 .equal-height-columns .main {
     width: 648px;
     background: rgb(235, 118, 118);
 }
+
 .equal-height-columns .sidebar {
     width: 250px;
     background: #1dcceb;
@@ -201,6 +200,7 @@ p:last-child {
     padding-left: 5px; 
 
 }
+
 .form [type="submit"] {
     display: block;
     margin: 0 auto;
