@@ -29,7 +29,7 @@ body, html {
     float: right;
 }
 .clear:after {
-    content: " ";
+    content: "";
     display: table;
     clear: both;
 }
@@ -132,6 +132,8 @@ p:last-child {
     border: 1px dashed gray;
 }
 
+
+
 .gradient-column-wrapper {
     background-image: linear-gradient(90deg, #75fd5a 250px, #f756f7 250px, #2eb9fa 648px, #75fd5a 648px);
 }
@@ -141,6 +143,35 @@ p:last-child {
 }
 .gradient-column-wrapper .sidebar {
     background: none;
+}
+
+
+
+.pseudoEl-column-wrapper {
+    z-index: 1;
+    position: relative;
+    background: gray;
+}
+.pseudoEl-column-wrapper:after,
+.pseudoEl-column-wrapper:before  {
+    position: absolute;
+    content: "";
+    width: 398px;
+    height: 100%;
+    top: 0;
+    left: 250px;
+    background: red;
+    z-index: -1;
+}
+.pseudoEl-column-wrapper .main {
+    width: 398px;
+    background: none;
+}
+.pseudoEl-column-wrapper .sidebar {
+    background: none;
+}
+.clear-div {
+    clear: both;
 }
 
 /* ---------------clear floats page styles---------------- */
